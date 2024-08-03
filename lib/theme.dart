@@ -14,7 +14,7 @@ class AppStyle {
   final TextStyle bodyStyleg;
   final TextStyle bodyStyleb2;
   final TextStyle linkStyleb;
-  final double size;
+
 
   AppStyle(BuildContext context)
       : greanStrong = const Color.fromARGB(255, 5, 37, 36),
@@ -81,7 +81,6 @@ class AppStyle {
           fontWeight: FontWeight.w400,
         ),
 
-        size=_calculateFontSize(context, baseSize: 10),
         linkStyleb = TextStyle(
           
           fontSize: _calculateFontSize(context,
@@ -91,26 +90,45 @@ class AppStyle {
           wordSpacing: 2,
           fontWeight: FontWeight.bold,
         );
+static double _calculateFontSize(BuildContext context, {required double baseSize}) {
+  double screenWidth = MediaQuery.of(context).size.width;
 
-  static double _calculateFontSize(BuildContext context,
-      {required double baseSize}) {
-    double screenWidth = MediaQuery.of(context).size.width;
-
-    // تغيير حجم الخط بناءً على عرض الشاشة
-    if (screenWidth < 320) {
-      // شاشة صغيرة
-      return baseSize * 0.8;
-    } else if (screenWidth >= 320 && screenWidth < 500) {
-      // شاشة متوسطة
-      return baseSize;
-    } else if (screenWidth >= 500 && screenWidth < 720) {
-      // شاشة كبيرة
-      return baseSize * 1.2;
-    } else {
-      // شاشة أكبر
-      return baseSize * 1.55;
-    }
+  // تغيير حجم الخط بناءً على عرض الشاشة
+  if (screenWidth < 320) {
+    // شاشة صغيرة جدًا
+    return baseSize * 0.8;
+  } else if (screenWidth >= 320 && screenWidth < 375) {
+    // شاشة صغيرة
+    return baseSize * 0.9;
+  } else if (screenWidth >= 375 && screenWidth < 425) {
+    // شاشة متوسطة صغيرة
+    return baseSize;
+  } else if (screenWidth >= 425 && screenWidth < 480) {
+    // شاشة متوسطة
+    return baseSize * 1.1;
+  } else if (screenWidth >= 480 && screenWidth < 540) {
+    // شاشة متوسطة كبيرة
+    return baseSize * 1.2;
+  } else if (screenWidth >= 540 && screenWidth < 600) {
+    // شاشة كبيرة
+    return baseSize * 1.3;
+  } else if (screenWidth >= 600 && screenWidth < 660) {
+    // شاشة كبيرة جدًا
+    return baseSize * 1.4;
+  } else if (screenWidth >= 660 && screenWidth < 720) {
+    // شاشة فائقة الكبر
+    return baseSize * 1.5;
+  } else if (screenWidth >= 720 && screenWidth < 800) {
+    // شاشة ضخمة
+    return baseSize * 1.6;
+  } else if (screenWidth >= 800 && screenWidth < 900) {
+    // شاشة فائقة الضخامة
+    return baseSize * 1.65;
+  } else {
+    // شاشة أكبر
+    return baseSize * 1.7;
   }
+}
 }
 
 // InheritedWidget

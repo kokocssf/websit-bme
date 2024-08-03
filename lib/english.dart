@@ -39,7 +39,7 @@ class _EnglishState extends State<English> {
                   child: Image(
                     image: const AssetImage("images/Group2.png"),
                     height: 0.3.sh,
-                    width: 0.3.sw,
+                    width: 0.21.sh,
                   ),
                 ),
               ),
@@ -297,7 +297,7 @@ class _EnglishState extends State<English> {
                 child: Row(children: [
                   SizedBox(
                     height: 200.h,
-                    width: 100.h,
+                    width: 100.w,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -309,11 +309,9 @@ class _EnglishState extends State<English> {
                           height: 10.h,
                           width: 1.sw,
                         ),
-                        Expanded(
-                          child: Text(
-                            "To be a leader in region in biomedical innovation, driving advancements in medical technology and patient care solutions through dedicated research and collaboration.",
-                            style: AppStyle(context).bodyStyleb2,
-                          ),
+                        Text(
+                          "To be a leader in region in biomedical innovation, driving advancements in medical technology and patient care solutions through dedicated research and collaboration.",
+                          style: AppStyle(context).bodyStyleb2,
                         )
                       ],
                     ),
@@ -323,7 +321,7 @@ class _EnglishState extends State<English> {
                   ),
                   SizedBox(
                     height: 200.h,
-                    width: 100.h,
+                    width: 100.w,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -335,11 +333,9 @@ class _EnglishState extends State<English> {
                           height: 10.h,
                           width: 1.sw,
                         ),
-                        Expanded(
-                          child: Text(
-                            "To innovate and develop high-quality biomedical solutions that enhance patient care and improve healthcare outcomes through cutting-edge research and development.",
-                            style: AppStyle(context).bodyStyleb2,
-                          ),
+                        Text(
+                          "To innovate and develop high-quality biomedical solutions that enhance patient care and improve healthcare outcomes through cutting-edge research and development.",
+                          style: AppStyle(context).bodyStyleb2,
                         )
                       ],
                     ),
@@ -659,46 +655,19 @@ class _EnglishState extends State<English> {
                   )),
               Positioned(
                 top: 0.6.sh,
-                left: AppStyle(context).size * 18,
-                right: AppStyle(context).size * 18,
+                left:0.35.sw ,
+                right:0.35.sw ,
                 child: Transform.rotate(
                   angle: 0,
                   child: Container(
-                    width: AppStyle(context).size, // طول الخط
-
+                  
                     height: 3.h,
                     color: AppStyle(context).greanStrong,
                   ),
                 ),
               ),
-              Positioned(
-                top: 0.72.sh,
-                left: AppStyle(context).size * 15,
-                right: AppStyle(context).size * 22,
-                child: Transform.rotate(
-                  angle: 70,
-                  child: Container(
-                    width: AppStyle(context).size, // طول الخط
-
-                    height: 3.h,
-                    color: AppStyle(context).greanStrong,
-                  ),
-                ),
-              ),
-              Positioned(
-                top: 0.72.sh,
-                left: AppStyle(context).size * 22,
-                right: AppStyle(context).size * 15,
-                child: Transform.rotate(
-                  angle: -70,
-                  child: Container(
-                    width: AppStyle(context).size, // طول الخط
-
-                    height: 3.h,
-                    color: AppStyle(context).greanStrong,
-                  ),
-                ),
-              )
+            
+           
             ]),
           ),
 
