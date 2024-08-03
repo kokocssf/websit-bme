@@ -587,7 +587,7 @@ textAlign: TextAlign.right,
                     ).bodyStyleb2,
                   )),
               Container(
-                margin: EdgeInsets.only(top: 0.57.sh),
+                margin: EdgeInsets.only(top: 0.5.sh),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -609,59 +609,51 @@ textAlign: TextAlign.right,
                       child: Column(
                         children: [
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               imageTeam("images/team2.jpg"),
-                              SizedBox(
-                                width: 0.11.sw,
-                              ),
+                            
                               imageTeam("images/team1.jpg"),
-                              SizedBox(
-                                width: 0.15.sw,
-                              ),
+
                               imageTeam("images/team3.jpg")
                             ],
                           ),
-                          Container(padding: EdgeInsets.only(left: 45.w,right: 45.w),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Column(
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
-                                    nameTeam(context, "م. محمد علي البدري"),
-                                    nickname(context, "بحث وتطوير"),
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 13.w,
-                                ),
-                                Column(
-                                  children: [
-                                    nameTeam(context, "د. حسين هادي مشبك"),
-                                    Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        nickname(
-                                            context, "خبير وباحث في مجال"),
-                                        nickname(context, "البايوتكنلوجي"),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 15.w,
-                                ),
-                                Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    nameTeam(context, "م. محمد صادق علي"),
-                                    nickname(context,
-                                        "التحليل والتصميم")
-                                  ],
-                                )
-                              ],
-                            ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  nameTeam(context, "م. محمد علي البدري"),
+                                  nickname(context, "بحث وتطوير"),
+                                ],
+                              ),
+                             
+                              Column(
+                                children: [
+                                  nameTeam(context, "د. حسين هادي مشبك"),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      nickname(
+                                          context, "خبير وباحث في مجال"),
+                                      nickname(context, "البايوتكنلوجي"),
+                                    ],
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                width: 15.w,
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  nameTeam(context, "م. محمد صادق علي"),
+                                  nickname(context,
+                                      "التحليل والتصميم")
+                                ],
+                              )
+                            ],
                           ),
                         ],
                       ),
