@@ -22,8 +22,8 @@ class MyApp extends StatelessWidget {
           child: GetMaterialApp(
             debugShowCheckedModeBanner: false,
             home: Get.deviceLocale?.languageCode == 'ar'
-                ? const English()
-                :  English(),
+                ? const Arabic()
+                :  const English(),
           )),
     );
   }

@@ -15,7 +15,6 @@ class _EnglishState extends State<English> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-
       //intro
       child: Column(
         children: [
@@ -35,7 +34,9 @@ class _EnglishState extends State<English> {
                 bottom: 0.75.sh,
                 left: 0.6.sw,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(const Arabic());
+                  },
                   child: Image(
                     image: const AssetImage("images/Group2.png"),
                     height: 0.3.sh,
@@ -50,17 +51,18 @@ class _EnglishState extends State<English> {
                 child: SizedBox(
                   height: 0.3.sh,
                   width: 0.9.sw,
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "AUGUST 2024",
                         style: AppStyle(context).headerStyle,
                       ),
-                        Text(
+                      Text(
                         "BioMed Iraq",
                         style: AppStyle(context).headerStyle,
                       ),
-                        Text(
+                      Text(
                         "Our Future is Bright",
                         style: AppStyle(context).headerStyle,
                       ),
@@ -655,19 +657,16 @@ class _EnglishState extends State<English> {
                   )),
               Positioned(
                 top: 0.6.sh,
-                left:0.35.sw ,
-                right:0.35.sw ,
+                left: 0.35.sw,
+                right: 0.35.sw,
                 child: Transform.rotate(
                   angle: 0,
                   child: Container(
-                  
                     height: 3.h,
                     color: AppStyle(context).greanStrong,
                   ),
                 ),
               ),
-            
-           
             ]),
           ),
 
@@ -734,47 +733,79 @@ class _EnglishState extends State<English> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-               Container(margin: EdgeInsets.only(top:0.009.sh,),height: 0.3.sh,width: 1.sw,
-                 child: Column(
-                  children: [
-                  Row(mainAxisAlignment: MainAxisAlignment.center,
-                   children: [ imageTeam("images/team2.jpg"),SizedBox(width: 0.11.sw,) ,imageTeam("images/team1.jpg"),SizedBox(width:0.15.sw,) ,imageTeam("images/team3.jpg")],
-                  )
-             ,  Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [Column( mainAxisAlignment: MainAxisAlignment.center,
-            
-                children: [
-
-                  nameTeam(context, "Eng. Mohammed Albadri"),nickname(context, "Research and Development"),
-
-                ],
-              ),SizedBox(width: 13.w,) ,Column(
-                children: [
-                  nameTeam(context, "Dr. Hussein Mishbak"),
-                  Column(mainAxisAlignment: MainAxisAlignment.center,children: [nickname(context, "Academic Advisor Expert"),nickname(context, " of Biotechnology"),],)
-                ],
-              ),SizedBox(width: 15.w,) , Column(mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  nameTeam(context, "Eng. Mohammed S. Ali"),
-                  nickname(context, "Designing and Analyzing using CAD")
-                ],
-              )],)
-               ,
-        
-               
-                 ],),
-               )
-              
+                    Container(
+                      margin: EdgeInsets.only(
+                        top: 0.009.sh,
+                      ),
+                      height: 0.3.sh,
+                      width: 1.sw,
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              imageTeam("images/team2.jpg"),
+                              SizedBox(
+                                width: 0.11.sw,
+                              ),
+                              imageTeam("images/team1.jpg"),
+                              SizedBox(
+                                width: 0.15.sw,
+                              ),
+                              imageTeam("images/team3.jpg")
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  nameTeam(context, "Eng. Mohammed Albadri"),
+                                  nickname(context, "Research and Development"),
+                                ],
+                              ),
+                              SizedBox(
+                                width: 13.w,
+                              ),
+                              Column(
+                                children: [
+                                  nameTeam(context, "Dr. Hussein Mishbak"),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      nickname(
+                                          context, "Academic Advisor Expert"),
+                                      nickname(context, " of Biotechnology"),
+                                    ],
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                width: 15.w,
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  nameTeam(context, "Eng. Mohammed S. Ali"),
+                                  nickname(context,
+                                      "Designing and Analyzing using CAD")
+                                ],
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               )
             ]),
           ),
 
-
 //page8
 
-    SizedBox(
+          SizedBox(
             height: 1.sh,
             width: 1.sw,
             child: Stack(children: [
@@ -796,15 +827,14 @@ class _EnglishState extends State<English> {
                     "Sustainability Practices ",
                     style: AppStyle(context).headerStyle2,
                   )),
-
-                      Container(
-                      margin: EdgeInsets.only(top: 80.h, left: 40.h, right: 40),
-                      height: 150.h,
-                      width: 200.w,
-                      child: Text(
-                        "Sustainability is at the core of BioMed Iraq's operations.",
-                        style: AppStyle(context).bodyStylew2,
-                      )),
+              Container(
+                  margin: EdgeInsets.only(top: 80.h, left: 40.h, right: 40),
+                  height: 150.h,
+                  width: 200.w,
+                  child: Text(
+                    "Sustainability is at the core of BioMed Iraq's operations.",
+                    style: AppStyle(context).bodyStylew2,
+                  )),
               Positioned(
                   top: 40.h,
                   right: 20.w,
@@ -824,7 +854,7 @@ class _EnglishState extends State<English> {
                   width: 1.sw,
                   height: 600.h,
                   child: Text(
-"At BioMed Iraq, we prioritize the use of sustainable and biocompatible materials in our products. Materials such as PLGA and PETG are not only safe for medical applications but also environmentally friendly, reducing the ecological footprint of our manufacturing processes. Our commitment to sustainability extends to our production methods, where we employ 3D printing techniques that minimize waste and energy consumption.",
+                    "At BioMed Iraq, we prioritize the use of sustainable and biocompatible materials in our products. Materials such as PLGA and PETG are not only safe for medical applications but also environmentally friendly, reducing the ecological footprint of our manufacturing processes. Our commitment to sustainability extends to our production methods, where we employ 3D printing techniques that minimize waste and energy consumption.",
                     textAlign: TextAlign.justify,
                     style: AppStyle(context).bodyStyleb2,
                   )),
@@ -856,13 +886,11 @@ class _EnglishState extends State<English> {
                   width: 1.sw,
                   height: 600.h,
                   child: Text(
-                   "BMI is dedicated to engaging with the local community to promote sustainability and environmental awareness. We conduct workshops and educational programs to inform and inspire the next generation of innovators about the importance of sustainable practices in the biomedical field. By fostering a culture of sustainability, we aim to make a lasting impact on both our industry and our community.",
+                    "BMI is dedicated to engaging with the local community to promote sustainability and environmental awareness. We conduct workshops and educational programs to inform and inspire the next generation of innovators about the importance of sustainable practices in the biomedical field. By fostering a culture of sustainability, we aim to make a lasting impact on both our industry and our community.",
                     textAlign: TextAlign.justify,
                     style: AppStyle(context).bodyStyleb2,
                   )),
-
-
- Positioned(
+              Positioned(
                   top: 480.h,
                   left: 30.w,
                   child: Text(
@@ -874,53 +902,45 @@ class _EnglishState extends State<English> {
                   width: 1.sw,
                   height: 600.h,
                   child: Text(
-"We have implemented stringent waste management protocols to ensure that any byproducts or waste materials generated during our production processes are disposed of responsibly. By recycling and reusing materials wherever possible, we significantly reduce the amount of waste that ends up in landfills.",
+                    "We have implemented stringent waste management protocols to ensure that any byproducts or waste materials generated during our production processes are disposed of responsibly. By recycling and reusing materials wherever possible, we significantly reduce the amount of waste that ends up in landfills.",
                     textAlign: TextAlign.justify,
                     style: AppStyle(context).bodyStyleb2,
                   )),
-
-
             ]),
           )
-      
-
-
-
-
-
-
-
-
-
         ],
       ),
     );
   }
 
-
-  Container nickname(BuildContext context , String name) {
+  Container nickname(BuildContext context, String name) {
     return Container(
       child: Text(
-                    name,
-                    style: AppStyle(context).bodyStyleb2,
-                  ),
+        name,
+        style: AppStyle(context).bodyStyleb2,
+      ),
     );
   }
 
-  Text nameTeam(BuildContext context , String name) {
+  Text nameTeam(BuildContext context, String name) {
     return Text(
-                  name,
-                  style: AppStyle(context).bodyStyleb,
-                );
+      name,
+      style: AppStyle(context).bodyStyleb,
+    );
   }
 
   Container imageTeam(String img) {
-    return Container(height: 90.h,width: 90.w, decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          ),child:  Image(image:  AssetImage(
-                  img,
-
-                ),));
+    return Container(
+        height: 90.h,
+        width: 90.w,
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+        ),
+        child: Image(
+          image: AssetImage(
+            img,
+          ),
+        ));
   }
 
   SizedBox divider() => SizedBox(

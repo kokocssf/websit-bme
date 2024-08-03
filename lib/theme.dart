@@ -50,7 +50,7 @@ class AppStyle {
         ),
         bodyStylew2 = TextStyle(
             fontSize: _calculateFontSize(context,
-                baseSize: 9), // حجم نص أصغر للنصوص العامة
+                baseSize: 8), // حجم نص أصغر للنصوص العامة
             color: Colors.white,
             decoration: TextDecoration.none,
             fontWeight: FontWeight.w300),
@@ -84,7 +84,7 @@ class AppStyle {
         linkStyleb = TextStyle(
           
           fontSize: _calculateFontSize(context,
-              baseSize: 7), // حجم نص أكبر قليلاً لنصوص خاصة
+              baseSize: 8), // حجم نص أكبر قليلاً لنصوص خاصة
           color: Colors.black,
           decoration: TextDecoration.none,
           wordSpacing: 2,
@@ -105,28 +105,28 @@ static double _calculateFontSize(BuildContext context, {required double baseSize
     return baseSize;
   } else if (screenWidth >= 425 && screenWidth < 480) {
     // شاشة متوسطة
-    return baseSize * 1.1;
+    return baseSize * 1;
   } else if (screenWidth >= 480 && screenWidth < 540) {
     // شاشة متوسطة كبيرة
-    return baseSize * 1.2;
+    return baseSize * 1.1;
   } else if (screenWidth >= 540 && screenWidth < 600) {
     // شاشة كبيرة
-    return baseSize * 1.3;
+    return baseSize * 1.2;
   } else if (screenWidth >= 600 && screenWidth < 660) {
     // شاشة كبيرة جدًا
-    return baseSize * 1.4;
+    return baseSize * 1.3;
   } else if (screenWidth >= 660 && screenWidth < 720) {
     // شاشة فائقة الكبر
-    return baseSize * 1.5;
+    return baseSize * 1.35;
   } else if (screenWidth >= 720 && screenWidth < 800) {
     // شاشة ضخمة
-    return baseSize * 1.6;
+    return baseSize * 1.45;
   } else if (screenWidth >= 800 && screenWidth < 900) {
     // شاشة فائقة الضخامة
-    return baseSize * 1.65;
+    return baseSize * 1.5;
   } else {
     // شاشة أكبر
-    return baseSize * 1.7;
+    return baseSize * 1.55;
   }
 }
 }
