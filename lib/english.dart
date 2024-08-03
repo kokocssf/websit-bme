@@ -15,6 +15,8 @@ class _EnglishState extends State<English> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+
+      //intro
       child: Column(
         children: [
           Stack(
@@ -48,9 +50,21 @@ class _EnglishState extends State<English> {
                 child: SizedBox(
                   height: 0.3.sh,
                   width: 0.9.sw,
-                  child: Text(
-                    "AUGUST 2024      BioMed Iraq              Our Future is Bright",
-                    style: AppStyle(context).headerStyle,
+                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "AUGUST 2024",
+                        style: AppStyle(context).headerStyle,
+                      ),
+                        Text(
+                        "BioMed Iraq",
+                        style: AppStyle(context).headerStyle,
+                      ),
+                        Text(
+                        "Our Future is Bright",
+                        style: AppStyle(context).headerStyle,
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -109,6 +123,7 @@ class _EnglishState extends State<English> {
               ),
             ],
           ),
+          //page2
           Container(
             padding: EdgeInsets.only(top: 20.h, left: 10.w, right: 10.w),
             height: 1.sh,
@@ -229,6 +244,7 @@ class _EnglishState extends State<English> {
               ],
             ),
           ),
+          //page3
           SizedBox(
             height: 1.sh,
             width: 1.sw,
@@ -244,7 +260,7 @@ class _EnglishState extends State<English> {
                 ),
               ),
               Container(
-                  margin: EdgeInsets.only(top: 40.w, left: 40.h, right: 40),
+                  margin: EdgeInsets.only(top: 40.h, left: 40.h, right: 40),
                   height: 150.h,
                   width: 200.w,
                   child: Text(
@@ -347,7 +363,7 @@ class _EnglishState extends State<English> {
                 ),
               ),
               Container(
-                  margin: EdgeInsets.only(top: 40.w, left: 40.h, right: 40),
+                  margin: EdgeInsets.only(top: 40.h, left: 40.h, right: 40),
                   height: 150.h,
                   width: 200.w,
                   child: Text(
@@ -428,7 +444,7 @@ class _EnglishState extends State<English> {
                 ),
               ),
               Container(
-                  margin: EdgeInsets.only(top: 50.w, left: 40.h, right: 40),
+                  margin: EdgeInsets.only(top: 50.h, left: 40.h, right: 40),
                   height: 150.h,
                   width: 300.w,
                   child: Text(
@@ -703,7 +719,7 @@ class _EnglishState extends State<English> {
                 ),
               ),
               Container(
-                  margin: EdgeInsets.only(top: 50.w, left: 40.h, right: 40),
+                  margin: EdgeInsets.only(top: 50.h, left: 40.h, right: 40),
                   height: 150.h,
                   width: 150.w,
                   child: Text(
@@ -804,13 +820,22 @@ class _EnglishState extends State<English> {
                 ),
               ),
               Container(
-                  margin: EdgeInsets.only(top: 40.w, left: 40.h, right: 40),
+                  margin: EdgeInsets.only(top: 30.h, left: 40.h, right: 40),
                   height: 150.h,
                   width: 200.w,
                   child: Text(
                     "Sustainability Practices ",
                     style: AppStyle(context).headerStyle2,
                   )),
+
+                      Container(
+                      margin: EdgeInsets.only(top: 80.h, left: 40.h, right: 40),
+                      height: 150.h,
+                      width: 200.w,
+                      child: Text(
+                        "Sustainability is at the core of BioMed Iraq's operations.",
+                        style: AppStyle(context).bodyStylew2,
+                      )),
               Positioned(
                   top: 40.h,
                   right: 20.w,
@@ -822,7 +847,7 @@ class _EnglishState extends State<English> {
                   top: 200.h,
                   left: 30.w,
                   child: Text(
-                    ". Research and Development (R&D)",
+                    ". Eco-Friendly Research and Production",
                     style: AppStyle(context).bodyStyleg,
                   )),
               Container(
@@ -830,7 +855,7 @@ class _EnglishState extends State<English> {
                   width: 1.sw,
                   height: 600.h,
                   child: Text(
-                    "BMI is dedicated to advancing the field of biomaterials and medical devices through extensive research and development. We are currently engaged in biocompatibility studies to explore new materials and their interactions with biological systems, ensuring safety and efficacy. Additionally, we are focused on developing innovative medical devices that aim to enhance patient outcomes and quality of life.",
+"At BioMed Iraq, we prioritize the use of sustainable and biocompatible materials in our products. Materials such as PLGA and PETG are not only safe for medical applications but also environmentally friendly, reducing the ecological footprint of our manufacturing processes. Our commitment to sustainability extends to our production methods, where we employ 3D printing techniques that minimize waste and energy consumption.",
                     textAlign: TextAlign.justify,
                     style: AppStyle(context).bodyStyleb2,
                   )),
@@ -838,7 +863,7 @@ class _EnglishState extends State<English> {
                   top: 300.h,
                   left: 30.w,
                   child: Text(
-                    ". Biocompatible Materials",
+                    ". Energy Efficiency and Sustainable Sourcing",
                     style: AppStyle(context).bodyStyleg,
                   )),
               Container(
@@ -846,26 +871,46 @@ class _EnglishState extends State<English> {
                   width: 1.sw,
                   height: 600.h,
                   child: Text(
-                    "Our focus on biomaterials involves the development and utilization of biocompatible materials such as Poly(Lactic-co-Glycolic Acid) (PLGA), which is used for creating biodegradable scaffolds, drug delivery systems, and implantable devices due to its excellent biocompatibility and controlled degradation rates. Polyethylene Terephthalate Glycol (PETG) is also ideal for producing durable and flexible medical components with high clarity and impact resistance. We also specialize in biodegradable scaffolds designed for tissue engineering, supporting the growth and development of new tissue in regenerative medicine applications, and customized scaffold designs tailored to meet specific medical needs such as bone regeneration, wound healing, and cartilage repair",
+                    "We maximize energy efficiency in our production facilities by using advanced technologies and optimizing processes, reducing our carbon footprint. We also select suppliers committed to sustainability, ensuring responsible sourcing of materials. This approach helps us maintain high ethical standards and minimize environmental impact.",
                     textAlign: TextAlign.justify,
                     style: AppStyle(context).bodyStyleb2,
                   )),
               Positioned(
-                  top: 455.h,
+                  top: 385.h,
                   left: 30.w,
                   child: Text(
-                    ". Biocompatible Materials",
+                    ". Community Engagement",
                     style: AppStyle(context).bodyStyleg,
                   )),
               Container(
-                  margin: EdgeInsets.only(top: 475.h, left: 30.w, right: 30.w),
+                  margin: EdgeInsets.only(top: 405.h, left: 30.w, right: 30.w),
                   width: 1.sw,
                   height: 600.h,
                   child: Text(
-                    "Our focus on biomaterials involves the development and utilization of biocompatible materials such as Poly(Lactic-co-Glycolic Acid) (PLGA), which is used for creating biodegradable scaffolds, drug delivery systems, and implantable devices due to its excellent biocompatibility and controlled degradation rates. Polyethylene Terephthalate Glycol (PETG) is also ideal for producing durable and flexible medical components with high clarity and impact resistance. We also specialize in biodegradable scaffolds designed for tissue engineering, supporting the growth and development of new tissue in regenerative medicine applications, and customized scaffold designs tailored to meet specific medical needs such as bone regeneration, wound healing, and cartilage repair",
+                   "BMI is dedicated to engaging with the local community to promote sustainability and environmental awareness. We conduct workshops and educational programs to inform and inspire the next generation of innovators about the importance of sustainable practices in the biomedical field. By fostering a culture of sustainability, we aim to make a lasting impact on both our industry and our community.",
                     textAlign: TextAlign.justify,
                     style: AppStyle(context).bodyStyleb2,
                   )),
+
+
+ Positioned(
+                  top: 480.h,
+                  left: 30.w,
+                  child: Text(
+                    ". Reducing Waste",
+                    style: AppStyle(context).bodyStyleg,
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 500.h, left: 30.w, right: 30.w),
+                  width: 1.sw,
+                  height: 600.h,
+                  child: Text(
+"We have implemented stringent waste management protocols to ensure that any byproducts or waste materials generated during our production processes are disposed of responsibly. By recycling and reusing materials wherever possible, we significantly reduce the amount of waste that ends up in landfills.",
+                    textAlign: TextAlign.justify,
+                    style: AppStyle(context).bodyStyleb2,
+                  )),
+
+
             ]),
           )
       

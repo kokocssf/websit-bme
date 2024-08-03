@@ -30,7 +30,7 @@ class AppStyle {
         ),
         headerStyle2 = TextStyle(
           fontSize:
-              _calculateFontSize(context, baseSize: 10), // حجم نص أكبر للرؤوس
+              _calculateFontSize(context, baseSize: 17), // حجم نص أكبر للرؤوس
           fontWeight: FontWeight.bold,
           color: Colors.white,
           decoration: TextDecoration.none,
